@@ -12,5 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require knockout-2.1.0
+//= require knockout-2.1.0.js
 //= require_tree .
