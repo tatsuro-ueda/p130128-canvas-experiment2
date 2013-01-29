@@ -18,6 +18,9 @@
 <% end %>
 </table>
 
+<select data-bind="options: sources, value:fileName"></select>
+<img id="img" data-bind="attr: {src: fileName}"></img>
+
 <br />
 
 <%= link_to 'New Image', new_image_path %>
