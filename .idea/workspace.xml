@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5019a6ae-acc6-4b7a-ae88-e956f88e2987" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Documents and Settings\stky\My Documents\Dropbox\recent_office_doc\p130128-canvas-experiment2\public\index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/images/index.html.erb" afterPath="$PROJECT_DIR$/app/views/images/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/images.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/images.js.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="p130128-canvas-experiment2.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5019a6ae-acc6-4b7a-ae88-e956f88e2987" time="1359438336218" ignored="false" />
+    <file path="/Dummy.txt" changelist="5019a6ae-acc6-4b7a-ae88-e956f88e2987" time="1359440828031" ignored="false" />
     <file path="/show.html.erb" changelist="5019a6ae-acc6-4b7a-ae88-e956f88e2987" time="1359424590484" ignored="false" />
     <file path="/seeds.rb" changelist="5019a6ae-acc6-4b7a-ae88-e956f88e2987" time="1359356567593" ignored="false" />
     <file path="/Gemfile" changelist="5019a6ae-acc6-4b7a-ae88-e956f88e2987" time="1359359209343" ignored="false" />
@@ -55,19 +53,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="images.js.coffee" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="images.js.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/images.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="18" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+            <state line="12" column="5" selection-start="370" selection-end="370" vertical-scroll-proportion="0.38162544">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/images/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="6" selection-start="631" selection-end="631" vertical-scroll-proportion="0.76808906">
+            <state line="23" column="6" selection-start="631" selection-end="631" vertical-scroll-proportion="-15.333333">
               <folding />
             </state>
           </provider>
@@ -107,9 +105,9 @@
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/images/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/images.js.coffee" />
         <option value="$PROJECT_DIR$/app/controllers/images_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/images/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/images.js.coffee" />
       </list>
     </option>
   </component>
@@ -1134,19 +1132,23 @@
       <created>1359438375656</created>
       <updated>1359438375656</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="renamed index.html and changed route">
+      <created>1359440838281</created>
+      <updated>1359440838281</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="1002" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.670068" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26152623" sideWeight="0.670068" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26152623" sideWeight="0.670068" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1199,7 +1201,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="jsonp" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed index.html and changed route" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1214,6 +1216,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="test" />
     <MESSAGE value="jsonp" />
+    <MESSAGE value="renamed index.html and changed route" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1291,23 +1294,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/images.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/image.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/images_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1319,9 +1308,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/images_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="5" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/images/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="6" selection-start="631" selection-end="631" vertical-scroll-proportion="0.76808906">
+        <state line="23" column="6" selection-start="631" selection-end="631" vertical-scroll-proportion="-15.333333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/images.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="370" selection-end="370" vertical-scroll-proportion="0.38162544">
           <folding />
         </state>
       </provider>
