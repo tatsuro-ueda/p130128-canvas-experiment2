@@ -1,12 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <b>Type:</b>
+  <%= @image.type %>
+</p>
+
+<p>
   <b>Path:</b>
   <%= @image.path %>
 </p>
-<p>
-  <%= image_tag(@image.path, :id => "img") %>
-</p>
+
 
 <%= link_to 'Edit', edit_image_path(@image) %> |
 <%= link_to 'Back', images_path %>

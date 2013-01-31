@@ -1,7 +1,7 @@
 P130128CanvasExperiment2::Application.routes.draw do
-  get "view01/index"
-
   resources :images
+
+  get "view01/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
