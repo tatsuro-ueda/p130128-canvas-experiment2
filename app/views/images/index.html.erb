@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Type</th>
+    <th>Imagetype</th>
     <th>Path</th>
     <th></th>
     <th></th>
@@ -11,7 +11,7 @@
 
 <% @images.each do |image| %>
   <tr>
-    <td><%= image.type %></td>
+    <td><%= image.imageType %></td>
     <td><%= image.path %></td>
     <td><%= link_to 'Show', image %></td>
     <td><%= link_to 'Edit', edit_image_path(image) %></td>
