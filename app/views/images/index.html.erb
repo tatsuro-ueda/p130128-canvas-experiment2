@@ -1,26 +1,23 @@
 <h1>Listing images</h1>
 
-<!--<table>-->
-  <!--<tr>-->
-    <!--<th>Path</th>-->
-    <!--<th></th>-->
-    <!--<th></th>-->
-    <!--<th></th>-->
-  <!--</tr>-->
+<table>
+  <tr>
+    <th>Path</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
 
-<!--<% @images.each do |image| %>-->
-  <!--<tr>-->
-    <!--<td><%= image.path %></td>-->
-    <!--<td><%= link_to 'Show', image %></td>-->
-    <!--<td><%= link_to 'Edit', edit_image_path(image) %></td>-->
-    <!--<td><%= link_to 'Destroy', image, confirm: 'Are you sure?', method: :delete %></td>-->
-  <!--</tr>-->
-<!--<% end %>-->
-<!--</table>-->
-
-<select data-bind="options: sources, value:fileName"></select>
-<img id="img" data-bind="attr: {src: fileName}"></img>
+<% @images.each do |image| %>
+  <tr>
+    <td><%= image.path %></td>
+    <td><%= link_to 'Show', image %></td>
+    <td><%= link_to 'Edit', edit_image_path(image) %></td>
+    <td><%= link_to 'Destroy', image, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
 
 <br />
 
-<!--<%= link_to 'New Image', new_image_path %>-->
+<%= link_to 'New Image', new_image_path %>
