@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5019a6ae-acc6-4b7a-ae88-e956f88e2987" name="Default" comment="" />
+    <list default="true" id="5019a6ae-acc6-4b7a-ae88-e956f88e2987" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/view01_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/view01_controller.rb" />
+    </list>
     <ignored path="p130128-canvas-experiment2.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="5019a6ae-acc6-4b7a-ae88-e956f88e2987" time="1359682770312" ignored="false" />
@@ -17,6 +19,7 @@
     <file path="/Ruby Console" changelist="5019a6ae-acc6-4b7a-ae88-e956f88e2987" time="1359683546250" ignored="false" />
     <file path="/images_controller.rb" changelist="5019a6ae-acc6-4b7a-ae88-e956f88e2987" time="1359686753140" ignored="false" />
     <file path="/routes.rb" changelist="5019a6ae-acc6-4b7a-ae88-e956f88e2987" time="1359685143312" ignored="false" />
+    <file path="/view01_controller.rb" changelist="5019a6ae-acc6-4b7a-ae88-e956f88e2987" time="1359694718156" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +41,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="30" selection-start="657" selection-end="657" vertical-scroll-proportion="0.54063606">
+            <state line="17" column="30" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view01_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/view01_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="60" selection-start="177" selection-end="177" vertical-scroll-proportion="0.06360424">
               <folding />
             </state>
           </provider>
@@ -83,6 +95,7 @@
         <option value="$PROJECT_DIR$/app/views/view01/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/view01.js.coffee" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/view01_controller.rb" />
       </list>
     </option>
   </component>
@@ -186,6 +199,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="p130128-canvas-experiment2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="p130128-canvas-experiment2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -852,13 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/view01_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="11" selection-start="58" selection-end="58" vertical-scroll-proportion="0.03180212">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/images_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="84" column="26" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.0">
@@ -938,7 +962,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="657" selection-end="657" vertical-scroll-proportion="0.54063606">
+        <state line="17" column="30" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/view01_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="60" selection-start="177" selection-end="177" vertical-scroll-proportion="0.06360424">
           <folding />
         </state>
       </provider>
