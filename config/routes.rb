@@ -1,5 +1,10 @@
 P130128CanvasExperiment2::Application.routes.draw do
-  resources :images
+  #resources :images
+  resources :images do
+    collection do
+      get 'two_by_two'
+    end
+  end
 
   get "view01/index"
 
@@ -53,7 +58,7 @@ P130128CanvasExperiment2::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
-  root :to => 'images#index'
+  root :to => 'view01#index'
 
   # See how all your routes lay out with "rake routes"
 

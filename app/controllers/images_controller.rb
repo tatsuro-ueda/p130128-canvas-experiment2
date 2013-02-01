@@ -80,4 +80,15 @@ class ImagesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # GET /images/two-by-two
+  # GET /images.json
+  def two-by-two
+    @images = Image.find(:all, conditions: {imageType: 'two-by-two' })
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @images }
+    end
+  end
 end
