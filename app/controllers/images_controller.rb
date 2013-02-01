@@ -81,9 +81,9 @@ class ImagesController < ApplicationController
     end
   end
 
-  # GET /images/two-by-two
-  # GET /images.json
-  def two-by-two
+  # GET /images/two_by_two
+  # GET /images/two_by_two.json
+  def two_by_two
     @images = Image.find(:all, conditions: {imageType: 'two-by-two' })
 
     respond_to do |format|

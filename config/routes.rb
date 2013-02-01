@@ -1,4 +1,6 @@
 P130128CanvasExperiment2::Application.routes.draw do
+  get "images/two_by_two"
+
   #resources :images
   resources :images do
     collection do
