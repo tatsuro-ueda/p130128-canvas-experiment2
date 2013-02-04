@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require knockout-2.1.0
-//= require p130124_ScrambledImage021
+//= require_tree ./jasmine_examples
+//= require_tree ./require_dir

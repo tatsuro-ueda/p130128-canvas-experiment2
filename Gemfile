@@ -42,4 +42,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem 'jasmine'
+gem 'jasmine' # added at 130204 by weed
+
+gem 'guard-coffeescript' # added at 130204 by weed
+
+gem "guard-livereload" # added at 130204 by weed
