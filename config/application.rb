@@ -51,8 +51,8 @@ module P130128CanvasExperiment2
     # config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
-    #config.assets.enabled = true
-    config.assets.enabled = false # 130201 tatsuro.ueda
+    config.assets.enabled = true
+    #config.assets.enabled = false # 130201 tatsuro.ueda
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
