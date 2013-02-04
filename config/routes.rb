@@ -1,10 +1,15 @@
 P130128CanvasExperiment2::Application.routes.draw do
+  get "view02/index"
+
+  get "images/eight_by_eight"
+
   get "images/two_by_two"
 
   #resources :images
   resources :images do
     collection do
       get 'two_by_two'
+      get 'eight_by_eight'
     end
   end
 

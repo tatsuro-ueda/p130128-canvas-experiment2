@@ -10,7 +10,7 @@ class AppViewModel01
 $ ->
   v = new AppViewModel01
   $.getJSON(
-    '/images/two_by_two.json'
+    '/images/eight_by_eight.json'
   ).done((data) ->
     for d in data
       v.sources.push '/assets/' + d.path
