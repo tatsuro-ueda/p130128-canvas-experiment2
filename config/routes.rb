@@ -1,4 +1,16 @@
 P130128CanvasExperiment2::Application.routes.draw do
+  get "view_one_page/index"
+
+  get "view_order_shuffled/index"
+
+  get "view021/sample"
+
+  get "images/eight_by_eight_shuffled"
+
+  get "image/eight_by_eight_shuffled"
+
+  get "view021/index"
+
   get "view02/index"
 
   get "images/eight_by_eight"

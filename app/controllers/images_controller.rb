@@ -102,4 +102,15 @@ class ImagesController < ApplicationController
       format.json { render json: @images }
     end
   end
+
+  # GET /images/eight_by_eight_shuffled
+  # GET /images/eight_by_eight_shuffled.json
+  def eight_by_eight_shuffled
+    @images = Image.find(:all, conditions: {imageType: 'eight-by-eight-shuffled' })
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @images }
+    end
+  end
 end
