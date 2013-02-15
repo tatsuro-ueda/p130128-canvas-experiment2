@@ -1,5 +1,6 @@
 <h1>1302成果報告</h1>
 <p>
+  <%= range_field :q1, min: 1, max: 8, step: 1, value: 1 %>
   <select data-bind="options: sources, value:fileName"></select>
   復号<input type="checkbox" data-bind="checked:isDecoded"/>
   ページ切り替えに少し時間がかかります。

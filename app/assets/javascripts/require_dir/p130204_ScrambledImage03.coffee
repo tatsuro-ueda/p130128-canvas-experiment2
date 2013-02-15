@@ -17,9 +17,9 @@ class root.ScrambledImage03
   constructor: (fileName, shuffleMatrix) ->
     @fileName = fileName
     @h = shuffleMatrix.length
-    console.log @h
+    # console.log @h
     @w = shuffleMatrix[0].length
-    console.log @w
+    # console.log @w
     @shuffleMatrix = shuffleMatrix
 
   paint: ->

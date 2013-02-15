@@ -1,4 +1,8 @@
 P130128CanvasExperiment2::Application.routes.draw do
+  get "bootstrap_test/index"
+
+  get "bootstrap/index"
+
   get "view_one_page/index"
 
   get "view_order_shuffled/index"

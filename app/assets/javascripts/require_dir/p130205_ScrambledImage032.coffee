@@ -1,5 +1,5 @@
 root = exports ? this
-class root.ScrambledImage031
+class root.ScrambledImage032
   fileName = null
   shuffleMatrix = []
   context = null
@@ -17,6 +17,10 @@ class root.ScrambledImage031
   ###
   constructor: (fileName) ->
     @fileName = fileName
+    @shuffleMatrix =
+      [
+        [0]
+      ]
 
   paint: ->
     @h = @shuffleMatrix.length
