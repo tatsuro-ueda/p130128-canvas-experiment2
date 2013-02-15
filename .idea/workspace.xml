@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5019a6ae-acc6-4b7a-ae88-e956f88e2987" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/view_order_shuffled.js.coffee" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/view_order_shuffled/index.html.erb" afterPath="$PROJECT_DIR$/app/views/view_order_shuffled/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coffeescripts/p130108_Image_spec.coffee" afterPath="$PROJECT_DIR$/spec/coffeescripts/p130108_Image_spec.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/p130108_Image_spec.js" afterPath="$PROJECT_DIR$/spec/javascripts/p130108_Image_spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/view01.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/view01.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/view02.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/view02.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/view021.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/view021.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/view_one_page.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/view_one_page.js.coffee" />
     </list>
     <ignored path="p130128-canvas-experiment2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,10 +95,10 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/view_order_shuffled/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.048387095">
+            <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1360908844000" expanded="true" signature="20:171" placeholder="..." />
-                <marker date="1360908844000" expanded="true" signature="175:214" placeholder="..." />
+                <marker date="1360909194000" expanded="true" signature="22:173" placeholder="..." />
+                <marker date="1360909194000" expanded="true" signature="177:216" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -1239,10 +1232,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/view_order_shuffled/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.048387095">
+        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1360908844000" expanded="true" signature="20:171" placeholder="..." />
-            <marker date="1360908844000" expanded="true" signature="175:214" placeholder="..." />
+            <marker date="1360909194000" expanded="true" signature="22:173" placeholder="..." />
+            <marker date="1360909194000" expanded="true" signature="177:216" placeholder="..." />
           </folding>
         </state>
       </provider>
