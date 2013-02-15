@@ -2,7 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
-class AppViewModel
+class ViewOnePageViewModel
   constructor: ->
     @fileName  = ko.observable "Hoge"
     @sources = []
@@ -37,7 +37,7 @@ class AppViewModel
       simg.paint()
 
 $ ->
-  v = new AppViewModel
+  v = new ViewOnePageiewModel
   # $.getJSON(
   #   '/images/127.json'
   # ).done((data) ->

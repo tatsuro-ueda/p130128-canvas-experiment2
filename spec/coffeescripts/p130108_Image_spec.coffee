@@ -62,3 +62,10 @@ describe "Scrambled Image 032", ->
       simg.id = "032"
       simg.paint()
       expect(true).toBeTruthy()
+
+describe "ViewOrderShuffled View Model", ->
+  it "should have eight sources", ->
+    v = new ViewOrderShuffledViewModel
+    v.getFileNames()
+    .done ->
+      expect(v.sources.length).toBe 8

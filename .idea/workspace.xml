@@ -2,60 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5019a6ae-acc6-4b7a-ae88-e956f88e2987" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Guardfile" afterPath="$PROJECT_DIR$/Guardfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/jasmine_examples/Player.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/jasmine_examples/Player.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/jasmine_examples/PlayerSpec.js" afterPath="$PROJECT_DIR$/spec/javascripts/jasmine_examples/PlayerSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/jasmine_examples/Song.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/jasmine_examples/Song.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/helpers/SpecHelper.js" afterPath="$PROJECT_DIR$/spec/javascripts/helpers/SpecHelper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/images/eight_by_eight_shuffled.html.erb" afterPath="$PROJECT_DIR$/app/views/images/eight_by_eight_shuffled.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/images_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/images_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/view02/index.html.erb" afterPath="$PROJECT_DIR$/app/views/view02/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/view021/index.html.erb" afterPath="$PROJECT_DIR$/app/views/view021/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/view_one_page/index.html.erb" afterPath="$PROJECT_DIR$/app/views/view_one_page/index.html.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/view_order_shuffled.js.coffee" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/view_order_shuffled/index.html.erb" afterPath="$PROJECT_DIR$/app/views/view_order_shuffled/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/support/jasmine.yml" afterPath="$PROJECT_DIR$/spec/javascripts/support/jasmine.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/knockout-2.1.0.js" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/knockout-2.1.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coffeescripts/p130108_Image_spec.coffee" afterPath="$PROJECT_DIR$/spec/coffeescripts/p130108_Image_spec.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/p130108_Image_spec.js" afterPath="$PROJECT_DIR$/spec/javascripts/p130108_Image_spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/require_dir/p130124_ScrambledImage021.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/require_dir/p130124_ScrambledImage021.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/p130128-canvas-experiment2.iml" afterPath="$PROJECT_DIR$/.idea/p130128-canvas-experiment2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/require_dir/p130204_ScrambledImage03.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/require_dir/p130204_ScrambledImage03.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/require_dir/p130204_ScrambledImage031.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/require_dir/p130204_ScrambledImage031.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/view021/sample.html.erb" afterPath="$PROJECT_DIR$/app/views/view021/sample.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/view01.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/view01.js.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/view02.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/view02.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/view021.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/view021.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/view021.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/view021.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/view021_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/view021_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/view021_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/view021_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/view021_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/view021_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/helpers/view021_helper_test.rb" afterPath="$PROJECT_DIR$/test/unit/helpers/view021_helper_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/view_one_page.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/view_one_page.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/view_one_page.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/view_one_page.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/view_one_page_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/view_one_page_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/view_one_page_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/view_one_page_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/view_one_page_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/view_one_page_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/helpers/view_one_page_helper_test.rb" afterPath="$PROJECT_DIR$/test/unit/helpers/view_one_page_helper_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/view_order_shuffled.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/view_order_shuffled.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/view_order_shuffled.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/view_order_shuffled.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/view_order_shuffled_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/view_order_shuffled_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/view_order_shuffled_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/view_order_shuffled_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/view_order_shuffled_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/view_order_shuffled_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/helpers/view_order_shuffled_helper_test.rb" afterPath="$PROJECT_DIR$/test/unit/helpers/view_order_shuffled_helper_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="p130128-canvas-experiment2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -145,13 +99,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/view_order_shuffled/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+            <state line="2" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.048387095">
               <folding>
-                <marker date="1360891277000" expanded="true" signature="20:231" placeholder="..." />
-                <marker date="1360891277000" expanded="true" signature="235:274" placeholder="..." />
+                <marker date="1360908844000" expanded="true" signature="20:171" placeholder="..." />
+                <marker date="1360908844000" expanded="true" signature="175:214" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -166,10 +120,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Guardfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Guardfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Guardfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="11" selection-start="165" selection-end="165" vertical-scroll-proportion="0.118858956">
+            <state line="2" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -196,7 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/view021_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/view021.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/view021/sample.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/view_order_shuffled.js.coffee" />
@@ -210,8 +163,9 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_test.css.scss" />
         <option value="$PROJECT_DIR$/app/views/bootstrap_test/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/view_order_shuffled/index.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/Guardfile" />
+        <option value="$PROJECT_DIR$/app/views/view_order_shuffled/index.html.erb" />
       </list>
     </option>
   </component>
@@ -519,28 +473,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="jasmine_examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="p130128-canvas-experiment2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="p130128-canvas-experiment2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1215,7 +1147,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" />
+        <state line="6" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
@@ -1279,16 +1213,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/view_order_shuffled/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1360891277000" expanded="true" signature="20:231" placeholder="..." />
-            <marker date="1360891277000" expanded="true" signature="235:274" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="17" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
@@ -1308,8 +1232,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Guardfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="11" selection-start="165" selection-end="165" vertical-scroll-proportion="0.118858956">
+        <state line="2" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/view_order_shuffled/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.048387095">
+          <folding>
+            <marker date="1360908844000" expanded="true" signature="20:171" placeholder="..." />
+            <marker date="1360908844000" expanded="true" signature="175:214" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -46,4 +46,14 @@
     });
   });
 
+  describe("ViewOrderShuffled View Model", function() {
+    return it("should have eight sources", function() {
+      var v;
+      v = new ViewOrderShuffledViewModel;
+      return v.getFileNames().done(function() {
+        return expect(v.sources.length).toBe(8);
+      });
+    });
+  });
+
 }).call(this);

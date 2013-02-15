@@ -2,13 +2,13 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
-class AppViewModel
+class View02ViewModel
   constructor: ->
     @fileName  = ko.observable "Hoge"
     @sources = []
 
 $ ->
-  v = new AppViewModel
+  v = new AView02ViewModel
   $.getJSON(
     '/images/eight_by_eight.json'
   ).done((data) ->
