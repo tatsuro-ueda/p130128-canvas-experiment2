@@ -1,7 +1,9 @@
 P130128CanvasExperiment2::Application.routes.draw do
-  get "bootstrap_test/index"
+  get "view_page_with_seed/index"
 
-  get "bootstrap/index"
+  get "view_with_seed/index"
+
+  get "bootstrap_test/index"
 
   get "view_one_page/index"
 
@@ -11,7 +13,7 @@ P130128CanvasExperiment2::Application.routes.draw do
 
   get "images/eight_by_eight_shuffled"
 
-  get "image/eight_by_eight_shuffled"
+  get "images/eight_by_eight"
 
   get "view021/index"
 
@@ -21,15 +23,9 @@ P130128CanvasExperiment2::Application.routes.draw do
 
   get "images/two_by_two"
 
-  #resources :images
-  resources :images do
-    collection do
-      get 'two_by_two'
-      get 'eight_by_eight'
-    end
-  end
-
   get "view01/index"
+
+  resources :images
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -81,7 +77,7 @@ P130128CanvasExperiment2::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
-  root :to => 'view01#index'
+  root :to => 'view_one_page#index'
 
   # See how all your routes lay out with "rake routes"
 

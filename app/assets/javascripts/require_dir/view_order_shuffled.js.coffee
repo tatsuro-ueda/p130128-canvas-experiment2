@@ -31,10 +31,3 @@ class root.ViewOrderShuffledViewModel
       for d in data
         @sources.push '/assets/' + d.path
     )
-
-
-$ ->
-  v = new ViewOrderShuffledViewModel
-  v.getFileNames()
-  .done ->
-    ko.applyBindings v

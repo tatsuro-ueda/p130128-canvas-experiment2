@@ -37,7 +37,7 @@ class ViewOnePageViewModel
       simg.paint()
 
 $ ->
-  v = new ViewOnePageiewModel
+  v = new ViewOnePageViewModel
   # $.getJSON(
   #   '/images/127.json'
   # ).done((data) ->
@@ -47,5 +47,5 @@ $ ->
 
   #   ko.applyBindings v
   # )
-  v.fileName('/assets/image51.png')
+  v.fileName('/assets/image52.png')
   ko.applyBindings v

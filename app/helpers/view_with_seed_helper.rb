@@ -1,0 +1,2 @@
+module ViewWithSeedHelper
+end
