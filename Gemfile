@@ -47,8 +47,8 @@ gem 'guard-coffeescript' # added at 130204 by weed
 gem 'guard-livereload' # added at 130204 by weed
 gem 'bootstrap-sass' # added at 130208 by weed
 
-group :development do
-  gem 'rb-inotify', :require => false
-  gem 'rb-fsevent', :require => false
-  gem 'rb-fchange', :require => false
-end
+# group :development do
+#   gem 'rb-inotify', :require => false
+#   gem 'rb-fsevent', :require => false
+#   gem 'rb-fchange', :require => false
+# end

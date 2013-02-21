@@ -22,7 +22,8 @@ class root.ScrambledImage040
       [
         [0]
       ]
- 
+    @isDecode = false
+
   _putShuffleArray: ->
     Math.seedrandom @seed
     a = []
@@ -46,7 +47,7 @@ class root.ScrambledImage040
         b[i][j] = a[i * @width + j]
     return b
 
-  _reverseMatrix: ->
+  _putReverseMatrix: ->
     b = []
     b = @_putShuffleMatrix()
     c = []
@@ -61,11 +62,19 @@ class root.ScrambledImage040
         w = k % @width
         c[h][w] = @width * i + j
     return c
-    
+
   paint: ->
+    ###
+    create matrix when it isnt given
+    ###
     if !@shuffleMatrix? or @shuffleMatrix.length is 1
-      @shuffleMatrix = @_putShuffleMatrix()
-    console.log @shuffleMatrix
+      ###
+      use decode matrix when isDecode
+      ###
+      if @isDecode
+        @shuffleMatrix = @_putReverseMatrix()
+      else
+        @shuffleMatrix = @_putShuffleMatrix()
     @h = @shuffleMatrix.length
     @w = @shuffleMatrix[0].length
 
@@ -111,7 +120,7 @@ class root.ScrambledImage040
         ###
         for i in [0...@h]
           for j in [0...@w]
-            console.log i + ', ' + j 
+            # if window.console? then console.log i + ', ' + j
             context.putImageData(
               imageData[i][j],
               (canvas.width / @w) * (@shuffleMatrix[i][j] % @w),

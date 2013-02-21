@@ -1,5 +1,2 @@
 $ ->
-  v = new ViewWithSeedViewModel
-  v.getFileNames()
-    .done ->
-      ko.applyBindings v
+  ko.applyBindings new ViewWithSeedViewModel

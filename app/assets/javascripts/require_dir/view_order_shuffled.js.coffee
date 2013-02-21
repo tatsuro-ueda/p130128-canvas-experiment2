@@ -22,6 +22,7 @@ class root.ViewOrderShuffledViewModel
             [57,38,50,46,58,39,51,47]
             [59,54,52,63,60,62,53,61]
           ]
+        console.log 'isDecoded is true'
       simg.id = 'original'
       simg.paint()
   getFileNames: ->

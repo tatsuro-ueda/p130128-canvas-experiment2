@@ -5,21 +5,25 @@
 root = exports ? this
 class root.ViewWithSeedViewModel
   constructor: ->
-    @fileName  = ko.observable "Hoge"
-    @sources = []
+    @isDecoded = ko.observable false
+    @encryptedKey = sjcl.encrypt("todo", "hirakegoma")
+    @personalPassword = ko.observable ''
+    @decryptedPassword = ko.computed =>
+      if @personalPassword() isnt ''
+        sjcl.decrypt @personalPassword(), @encryptedKey
+      else
+        return ''
+    @decodePassword = ko.observable ''
     @isDecoded = ko.observable false
     ko.computed =>
-      simg = new ScrambledImage040 @fileName()
-      simg.seed = 'todo'
-      simg.height = 8
-      simg.width = 6
-#      if @isDecoded()
+      simg = new ScrambledImage040 "/assets/image61.png"
+      simg.height = 16
+      simg.width = simg.height * 3 / 4
+      if @isDecoded()
+        simg.seed = @decodePassword()
+        simg.isDecode = true
       simg.id = 'original'
       simg.paint()
-  getFileNames: ->
-    $.getJSON(
-      '/images/eight_by_eight.json'
-    ).done((data) =>
-      for d in data
-        @sources.push '/assets/' + d.path
-    )
+  # decryptKey: ->
+  #   @decryptedPassword = sjcl.decrypt @personalPassword(), @encryptedKey
+  #   console.log @decryptedPassword

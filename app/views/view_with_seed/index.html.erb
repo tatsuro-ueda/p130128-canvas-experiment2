@@ -1,8 +1,31 @@
-<h1>130215成果報告</h1>
+<h1>13成果報告</h1>
 <p>
-  <select data-bind="options: sources, value:fileName"></select>
+  まずは適当な文字列を以下のテキストボックスに入れて、「復号」をチェックしてみてください。
+</p>
+<p>
+  画像復号鍵：<input data-bind="value: decodePassword, disable: isDecoded" />
   復号<input type="checkbox" data-bind="checked:isDecoded"/>
-  ページ切り替えに少し時間がかかります。
+</p>
+<hr/>
+<p>
+  うまく復号されませんね？では、復号鍵を手に入れましょう。
+</p>
+<p>
+  まず、サーバから暗号化された鍵が送られてきています。
+</p>
+<p>
+  鍵：
+  <textarea  rows="4" cols="40" disabled data-bind="value: encryptedKey"></textarea>
+</p>
+<p>
+  パスワードを入力してください（Enterで確定、間違えたらリロード）：
+  <input type="password" data-bind="value: personalPassword" />
+</p>
+<p>
+  画像復号鍵は<input disabled data-bind="value: decryptedPassword" />です。
+</p>
+<p>
+  取得できたら、最初のテキストボックスに入れてみましょう。
 </p>
 <p>
   <canvas id="original"></canvas>
