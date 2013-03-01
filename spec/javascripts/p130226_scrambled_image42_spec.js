@@ -1,10 +1,72 @@
 
 /*
-ScrambledImage041 test
+Seed Random Library test
 */
 
 
 (function() {
+
+  describe("seedrandom", function() {
+    return describe("when seed = 'hello'", function() {
+      beforeEach(function() {
+        return Math.seedrandom("hello");
+      });
+      return it("should return certain value", function() {
+        return expect(Math.random()).toBe(0.5463663768140734);
+      });
+    });
+  });
+
+  /*
+  Stanford Javascript Crypt Library test
+  */
+
+
+  describe("sjcl", function() {
+    return describe("when password = 'todo', text = 'hirakegoma'", function() {
+      beforeEach(function() {
+        return this.encrypted = sjcl.encrypt("todo", "hirakegoma");
+      });
+      return it("should decrypt text to 'hirakegoma'", function() {
+        return expect(sjcl.decrypt("todo", this.encrypted)).toBe('hirakegoma');
+      });
+    });
+  });
+
+  /*
+  ViewWithSeedViewModel test
+  */
+
+
+  describe("ViewWithSeedViewModel", function() {
+    beforeEach(function() {
+      return this.v = new ViewWithSeedViewModel;
+    });
+    describe(".encrypted", function() {
+      beforeEach(function() {
+        return this.encryptedKey = this.v.encryptedKey;
+      });
+      return it("should return encrypted object", function() {
+        console.log(this.encryptedKey);
+        return expect(true).toBeTruthy();
+      });
+    });
+    return describe("when personalPassword = 'todo'", function() {
+      beforeEach(function() {
+        return this.v.personalPassword('todo');
+      });
+      return describe(".decryptedPassword", function() {
+        return it("should return 'hirakegoma'", function() {
+          return expect(this.v.decryptedPassword()).toBe('hirakegoma');
+        });
+      });
+    });
+  });
+
+  /*
+  ScrambledImage041 test
+  */
+
 
   describe("ScrambledImage042", function() {
     describe("when constructed with 'image43.png', seed = 'todo'", function() {

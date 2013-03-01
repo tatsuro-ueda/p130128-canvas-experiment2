@@ -3,7 +3,7 @@ Seed Random Library test
 ###
 
 describe "seedrandom", ->
-  describe "when seed = 'hello'"
+  describe "when seed = 'hello'", ->
     beforeEach ->
       Math.seedrandom "hello"
 
@@ -15,7 +15,7 @@ Stanford Javascript Crypt Library test
 ###
 
 describe "sjcl", ->
-  describe "with password = 'todo', text = 'hirakegoma'", ->
+  describe "when password = 'todo', text = 'hirakegoma'", ->
     beforeEach ->
       @encrypted = sjcl.encrypt("todo", "hirakegoma")
 
