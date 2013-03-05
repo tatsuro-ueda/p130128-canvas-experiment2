@@ -5,6 +5,6 @@ guard 'coffeescript', input: 'spec/coffeescripts', output: 'spec/javascripts'
 
 # Guardfile
 guard 'livereload' do
-  # 下記の 1 行を追加
+  watch(%r{app/assets/javascripts/.+\.js})
   watch(%r{spec/javascripts/.+\.js})
 end
