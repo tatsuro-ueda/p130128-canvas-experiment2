@@ -4,17 +4,17 @@ class root.ViewAfterKeyRecieveViewModel
     @isDecoded = ko.observable false
     @encryptedKey = ko.observable ''
     @personalPassword = ko.observable ''
-    @decodePassword = ko.observable ''
+    @decodePassword = ''
 
     # do when @personalPassword is changed
     ko.computed =>
       if @personalPassword() isnt ''
-        @decodePassword sjcl.decrypt(@personalPassword(), @encryptedKey())
+        @decodePassword = sjcl.decrypt(@personalPassword(), @encryptedKey())
       simg = new ScrambledImage044 "/assets/image61.png"
         height: 16
         width:  12
         canvasId: 'original'
-        seed:   @decodePassword()
+        seed:   @decodePassword
       simg.fix()
       simg.paint()
 
