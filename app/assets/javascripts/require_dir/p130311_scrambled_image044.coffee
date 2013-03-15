@@ -8,37 +8,20 @@
 # mail: [ueda_tatsuro@yahoo.co.jp](mailto:ueda_tatsuro@yahoo.co.jp)
 #
 # This class provides both processes of scrambling image and fixing image scrambled.
+#
 
-# export this class to grobal namespace
 root = exports ? this
-class root.ScrambledImage043
-
-  # initialization
-  # ----------------------------
-  #
-  # ### filename
-  # image file name which is to be scrambled or fixed
-  # ### shuffleMatrix
-  # shuffleMatrix: shuffle matrix
-  # ### context
-  # use for canvas operation
-  # ### canvas
-  # canvas object in HTML
-  # ### canvasId
-  # canvas id which is used when processed image is painted
-  # ### seed
-  # use to create shuffle matrix
-  # ### height
-  # height of shuffle matrix
-  # ### width
-  # width of shuffle matrix
-  #
+class root.ScrambledImage044
   fileName = null
   shuffleMatrix = []
   context = null
   canvas = null
   canvasId = null
   seed = null
+  ###
+  HeightPartitionNum
+  WidthPartitionNum
+  ###
   height = null
   width = null
 
@@ -59,7 +42,7 @@ class root.ScrambledImage043
   ###
   make shuffle array
   ###
-  putShuffleArray_: ->
+  getShuffleArray_: ->
     Math.seedrandom @seed
     array = []
     sizeofMatrix = @height * @width
@@ -81,23 +64,23 @@ class root.ScrambledImage043
   ###
   make shuffle matrix from shuffle array
   ###
-  putShuffleMatrix_: ->
+  getShuffleMatrix_: ->
     shuffleArray = []
-    shuffleArray = @putShuffleArray_()
+    shuffleArray = @getShuffleArray_()
     shuffleMatrix = []
     for height_i in [0...@height]
       shuffleMatrix[height_i] = []
       for width_j in [0...@width]
         shuffleMatrix[height_i][width_j] =
-        shuffleArray[(height_i * @width) + width_j]
+          shuffleArray[(height_i * @width) + width_j]
     return shuffleMatrix
 
   ###
   make reverse matrix from shuffle matrix
   ###
-  putReverseMatrix_: ->
+  getReverseMatrix_: ->
     shuffleMatrix = []
-    shuffleMatrix = @putShuffleMatrix_()
+    shuffleMatrix = @getShuffleMatrix_()
 
     ###
     At first, make reverse matrix with 0 in all cell
@@ -117,14 +100,14 @@ class root.ScrambledImage043
         height = Math.floor(shuffleTo / @width)
         width = shuffleTo % @width
         reverseMatrix[height][width] =
-        @width * height_i + width_j
+          @width * height_i + width_j
     return reverseMatrix
 
   scramble: ->
-    @shuffleMatrix = @putShuffleMatrix_()
+    @shuffleMatrix = @getShuffleMatrix_()
 
   fix: ->
-    @shuffleMatrix = @putReverseMatrix_()
+    @shuffleMatrix = @getReverseMatrix_()
 
   paint: ->
     ###

@@ -22,6 +22,9 @@ describe "sjcl", ->
     it "should decrypt text to 'hirakegoma'", ->
       expect(sjcl.decrypt "todo", @encrypted).toBe 'hirakegoma'
 
+    # it "should return null with wrong password", ->
+    #   expect(sjcl.decrypt "hoge", @encrypted).toBeUndefined()
+
 ###
 ViewWithSeedViewModel test
 ###

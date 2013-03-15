@@ -1,0 +1,26 @@
+<h1>130315成果報告</h1>
+
+<p>
+  まず画像を復号するための鍵を手に入れましょう。
+</p>
+
+<p>
+  <button data-bind="click: createEncryptedKey">鍵を手に入れる</button>
+</p>
+
+<p>
+  <textarea  rows="4" cols="40" disabled data-bind="value: encryptedKey"></textarea>
+</p>
+
+<p>
+  次に、鍵にかかっているパスワードを解除しましょう（Enterで確定、間違えたらリロード）：
+  <input type="password" data-bind="value: personalPassword" />
+</p>
+
+<p>
+  正しいパスワードを入力すると、自動的に下の画像が復号されます。
+</p>
+
+<p>
+  <canvas id="original"></canvas>
+</p>

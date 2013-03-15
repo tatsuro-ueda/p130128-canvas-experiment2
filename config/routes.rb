@@ -1,4 +1,6 @@
 P130128CanvasExperiment2::Application.routes.draw do
+  get "view_after_key_recieve/index"
+
   get "view_with_pass/index"
 
   get "view_page_with_seed/index"
