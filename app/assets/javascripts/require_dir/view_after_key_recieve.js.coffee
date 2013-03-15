@@ -10,7 +10,7 @@ class root.ViewAfterKeyRecieveViewModel
     ko.computed =>
       if @personalPassword() isnt ''
         @decodePassword = sjcl.decrypt(@personalPassword(), @encryptedKey())
-      simg = new ScrambledImage044 "/assets/image61.png"
+      simg = new ScrambledImage044 "/assets/image61.png",
         height: 16
         width:  12
         canvasId: 'original'
