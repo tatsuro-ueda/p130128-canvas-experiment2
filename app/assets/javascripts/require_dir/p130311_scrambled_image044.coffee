@@ -18,42 +18,32 @@ class root.ScrambledImage044
   canvas = null
   canvasId = null
   seed = null
-  ###
-  HeightPartitionNum
-  WidthPartitionNum
-  ###
+  # HeightPartitionNum
   height = null
+  # WidthPartitionNum
   width = null
 
-  ###
-  TODO: write exception when w * h isnt sizeof shuffleMatrix
-  ###
+  # TODO: write exception when w * h isnt sizeof shuffleMatrix
   constructor: (fileName, params) ->
     @fileName = fileName
     @seed = params.seed
     @height = params.height
     @width = params.width
-    @canvasId = params.canvasId
+    @canvasIdString = params.canvasIdString
     @shuffleMatrix =
       [
         [0]
       ]
 
-  ###
-  make shuffle array
-  ###
+  # make shuffle array
   getShuffleArray_: ->
     Math.seedrandom @seed
     array = []
     sizeofMatrix = @height * @width
-    ###
-    At first, make a[] list as [1, 2, 3..., (sizeof_matrix - 1)]
-    ###
+    # At first, make a[] list as [1, 2, 3..., (sizeof_matrix - 1)]
     for cell_i in [0...sizeofMatrix]
       array[cell_i] = cell_i
-    ###
-    Then, randomize a[] list by Fisher–Yates shuffle algorithm
-    ###
+    # Then, randomize a[] list by Fisher–Yates shuffle algorithm
     for cell_i in [(sizeofMatrix - 1)..1]
       cell_j = Math.floor(Math.random() * (cell_i + 1))
       tmp = array[cell_i]
@@ -61,9 +51,7 @@ class root.ScrambledImage044
       array[cell_j] = tmp
     return array
 
-  ###
-  make shuffle matrix from shuffle array
-  ###
+  # make shuffle matrix from shuffle array
   getShuffleMatrix_: ->
     shuffleArray = []
     shuffleArray = @getShuffleArray_()
@@ -75,25 +63,19 @@ class root.ScrambledImage044
           shuffleArray[(height_i * @width) + width_j]
     return shuffleMatrix
 
-  ###
-  make reverse matrix from shuffle matrix
-  ###
+  # make reverse matrix from shuffle matrix
   getReverseMatrix_: ->
     shuffleMatrix = []
     shuffleMatrix = @getShuffleMatrix_()
 
-    ###
-    At first, make reverse matrix with 0 in all cell
-    ###
+    # At first, make reverse matrix with 0 in all cell
     reverseMatrix = []
     for height_i in [0...@height]
       reverseMatrix[height_i] = []
       for width_j in [0...@width]
         reverseMatrix[height_i][width_j] = 0
 
-    ###
-    Then, make reverse matrix with value of shuffle matrix
-    ###
+    # Then, make reverse matrix with value of shuffle matrix
     for height_i in [0...@height]
       for width_j in [0...@width]
         shuffleTo = shuffleMatrix[height_i][width_j]
@@ -110,10 +92,8 @@ class root.ScrambledImage044
     @shuffleMatrix = @getReverseMatrix_()
 
   paint: ->
-    ###
-    create matrix with parameters when matrix isnt given
-    ###
-    # if !@shuffleMatrix? or @shuffleMatrix.length is 1
+    # create matrix with parameters when matrix isnt given
+    # old code: `if !@shuffleMatrix? or @shuffleMatrix.length is 1`
 
     @height = @shuffleMatrix.length
     @width = @shuffleMatrix[0].length
@@ -123,11 +103,10 @@ class root.ScrambledImage044
     $(image)
     .on 'load', =>
 
-      ###
-      canvas finding and initialization
-      ###
-      if @canvasId?
-        canvas = $('canvas#' + @canvasId)[0]
+      # canvas finding and initialization
+      if @canvasIdString?
+        canvas = $('canvas#' + @canvasIdString)[0]
+        # canvas = $("canvas##{@canvasIdString}")[0]
       else
         canvas = $('canvas')[0]
       context = canvas.getContext "2d"
@@ -135,12 +114,13 @@ class root.ScrambledImage044
       canvas.width = image.width
       context.drawImage image, 0, 0
 
+      # overlay copy-guard image on canvas
+      # @overlayCopyGuardImageOnCanvas_ canvas
+
       cellWidth = canvas.width / @width
       cellHeight = canvas.height / @height
 
-      ###
-      prepare getting image cell data
-      ###
+      # prepare getting image cell data
       imageData = []
       getCellImageData = (height_i, width_j) =>
         context.getImageData(
@@ -150,17 +130,13 @@ class root.ScrambledImage044
           cellHeight
         )
 
-      ###
-      get image cell data
-      ###
+      # get image cell data
       for height_i in [0...@height]
         imageData[height_i] = []
         for width_j in [0...@width]
           imageData[height_i].push(getCellImageData height_i, width_j)
 
-      ###
-      put image cell data with shuffle matrix
-      ###
+      # get image cell data with shuffle matrix
       for height_i in [0...@height]
         for width_j in [0...@width]
           # if window.console? then console.log i + ', ' + j # for Debug
@@ -173,3 +149,6 @@ class root.ScrambledImage044
             # y
             cellHeight * height_index
           )
+
+  overlayCopyGuardImageOnCanvas_: (canvas) ->
+    $(canvas).before('<span class="guard"></span>')

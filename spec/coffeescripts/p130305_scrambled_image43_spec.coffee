@@ -1,59 +1,8 @@
 ###
-Seed Random Library test
+ScrambledImage043 test
 ###
 
-describe "seedrandom", ->
-  describe "when seed = 'hello'", ->
-    beforeEach ->
-      Math.seedrandom "hello"
-
-    it "should return certain value", ->
-      expect(Math.random()).toBe 0.5463663768140734
-
-###
-Stanford Javascript Crypt Library test
-###
-
-describe "sjcl", ->
-  describe "when password = 'todo', text = 'hirakegoma'", ->
-    beforeEach ->
-      @encrypted = sjcl.encrypt("todo", "hirakegoma")
-
-    it "should decrypt text to 'hirakegoma'", ->
-      expect(sjcl.decrypt "todo", @encrypted).toBe 'hirakegoma'
-
-    # it "should return null with wrong password", ->
-    #   expect(sjcl.decrypt "hoge", @encrypted).toBeUndefined()
-
-###
-ViewWithSeedViewModel test
-###
-
-describe "ViewWithSeedViewModel", ->
-  beforeEach ->
-    @v = new ViewWithSeedViewModel
-
-  describe ".encrypted", ->
-    beforeEach ->
-      @encryptedKey = @v.encryptedKey
-
-    it "should return encrypted object", ->
-      console.log @encryptedKey
-      expect(true).toBeTruthy()
-
-  describe "when personalPassword = 'todo'", ->
-    beforeEach ->
-      @v.personalPassword 'todo'
-
-    describe ".decryptedPassword", ->
-      it "should return 'hirakegoma'", ->
-        expect(@v.decryptedPassword()).toBe 'hirakegoma'
-
-###
-ScrambledImage041 test
-###
-
-describe "ScrambledImage043", ->
+xdescribe "ScrambledImage043", ->
 
   describe "when constructed with 'image43.png',
   seed = 'todo' height = 8, width = 8", ->
