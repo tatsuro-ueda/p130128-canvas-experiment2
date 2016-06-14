@@ -52,3 +52,5 @@ gem 'bootstrap-sass' # added at 130208 by weed
 #   gem 'rb-fsevent', :require => false
 #   gem 'rb-fchange', :require => false
 # end
+
+gem 'sprockets-rails', "2.1.3" # added at 160614 by weed
