@@ -54,4 +54,4 @@ gem 'bootstrap-sass' # added at 130208 by weed
 # end
 
 gem 'sprockets-rails', "2.1.3" # added at 160614 by weed
-gem 'sprockets', "~> 2.8, <= 2.11.0" # added at 160614 by weed
+gem 'sprockets', "~> 2.8" # added at 160614 by weed
